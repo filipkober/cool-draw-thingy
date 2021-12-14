@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <title>Funkcje</title>
+</head>
+<body>
+    <div id="calculator" style="width: 1500px; height: 1500px;"></div><br>
+    <script src="script.js"></script>
+    <script>
+        var elt = document.getElementById('calculator');
+  var calculator = Desmos.GraphingCalculator(elt);
+  
+  let i = 0
+  
+  eqs.forEach(val => {
+  calculator.setExpression({ id: `graph${i}`, latex: val });
+      i++
+  });
+    </script>
+
+</body>
+</html>
